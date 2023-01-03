@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -7,58 +8,146 @@
 .loginOuter {
   height: 100vh;
   width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(pink), to(black));
   background: linear-gradient(pink, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.loginOuter .loginInner {
+
+@media (max-width: 1080px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (max-width: 1000px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@media (max-width: 880px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@media (max-width: 500px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (max-width: 430px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-width: 370px) {
+  .loginOuter .sizeChange > * {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+.loginOuter .sizeChange .loginInner {
   height: 250px;
   width: 350px;
   border-radius: 15px;
   background-color: rgba(128, 128, 128, 0.423);
-  box-shadow: 0px 4px 2px black;
+  -webkit-box-shadow: 0px 4px 2px black;
+          box-shadow: 0px 4px 2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
-.loginOuter .loginInner .cir {
+
+.loginOuter .sizeChange .loginInner .cir {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   background-color: black;
   position: absolute;
   top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.loginOuter .loginInner .cir span {
+
+.loginOuter .sizeChange .loginInner .cir span {
   color: white;
   font-size: 60px;
 }
-.loginOuter .loginInner .Email {
+
+.loginOuter .sizeChange .loginInner .Email {
   height: 50px;
   width: 280px;
   border: 2px solid black;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(245, 245, 245, 0.574);
 }
-.loginOuter .loginInner .Email .icone {
+
+.loginOuter .sizeChange .loginInner .Email:focus-within {
+  border: 2px solid white;
+}
+
+.loginOuter .sizeChange .loginInner .Email .icone {
   height: 100%;
   width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-color: black;
 }
-.loginOuter .loginInner .Email input {
+
+.loginOuter .sizeChange .loginInner .Email input {
   height: 100%;
   width: 100%;
   padding: 0px 10px;
@@ -66,24 +155,41 @@
   outline: none;
   background: transparent;
 }
-.loginOuter .loginInner .Password {
+
+.loginOuter .sizeChange .loginInner .Password {
   height: 50px;
   width: 280px;
   border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(245, 245, 245, 0.574);
 }
-.loginOuter .loginInner .Password .icone {
+
+.loginOuter .sizeChange .loginInner .Password:focus-within {
+  border: 2px solid white;
+}
+
+.loginOuter .sizeChange .loginInner .Password .icone {
   height: 100%;
   width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-color: black;
 }
-.loginOuter .loginInner .Password input {
+
+.loginOuter .sizeChange .loginInner .Password input {
   height: 100%;
   width: 100%;
   padding: 0px 10px;
@@ -91,14 +197,39 @@
   outline: none;
   background-color: transparent;
 }
-.loginOuter .loginInner .Remember {
+
+.loginOuter .sizeChange .loginInner .Remember {
   width: 100%;
   padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.loginOuter .login {
+
+.loginOuter .sizeChange .loginInner .Remember #mee,
+.loginOuter .sizeChange .loginInner .Remember .Forgot {
+  cursor: pointer;
+}
+
+.loginOuter .sizeChange .outerValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginOuter .sizeChange .outerValue .login {
+  cursor: pointer;
   height: 40px;
   width: 250px;
   background-color: rgba(128, 128, 128, 0.334);
@@ -108,20 +239,59 @@
   color: white;
   font-weight: bold;
 }
-.loginOuter .orOuter {
+
+.loginOuter .sizeChange .orOuter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
-.loginOuter .orOuter .line {
+
+.loginOuter .sizeChange .orOuter .line {
   height: 2px;
   width: 100px;
   background-color: black;
 }
-.loginOuter .orOuter .or {
+
+.loginOuter .sizeChange .orOuter .or {
   font-size: 20px;
 }
-.loginOuter .signup {
+
+.loginOuter .sizeChange .outerSignup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginOuter .sizeChange .signup {
+  cursor: pointer;
+  height: 40px;
+  width: 250px;
+  background-color: rgba(128, 128, 128, 0.334);
+  border: none;
+  color: white;
+  font-weight: bold;
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
