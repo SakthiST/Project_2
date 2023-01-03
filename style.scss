@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.loginOuter{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(pink,black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .loginInner{
+        height: 250px;
+        width: 350px;
+        border-radius: 15px;
+        background-color: rgba(128, 128, 128, 0.423);
+        box-shadow: 0px 4px 2px black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: relative;  
+        .cir{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top:-50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: white;
+                font-size: 60px;
+            }
+        }  
+        .Email{
+            height: 50px;
+            width: 280px;
+            border: 2px solid black;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(245, 245, 245, 0.574);
+            
+            
+            
+            .icone{
+                height: 100%;
+                width: 50px;
+                // border: 2px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: black;
+                
+            }
+            input{
+                height: 100%;
+                width: 100%;
+                padding: 0px 10px;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+        }
+        .Password{
+            height: 50px;
+            width: 280px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            background-color: rgba(245, 245, 245, 0.574);
+            
+            .icone{
+                height: 100%;
+                width: 50px;
+                // border: 2px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: black;
+            }
+            input{
+                height: 100%;
+                width: 100%;
+                padding: 0px 10px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .Remember{
+            width: 100%;
+            // border: 2px solid black;
+            padding: 0px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+    }
+    .login{
+        height: 40px;
+        width: 250px;
+        background-color: rgba(128, 128, 128, 0.334);
+        border: none;  
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: white;
+        font-weight: bold;
+
+    }
+    .orOuter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    .line{
+        height: 2px;
+        width: 100px;
+        background-color: black;
+        
+    }
+    .or{
+        font-size: 20px;
+    }
+}
+    
+    .signup{
+        
+        border-radius: 20px;
+    }    
+}
